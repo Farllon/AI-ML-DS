@@ -3,7 +3,13 @@
 
 # ### Encontrando Conectores-Chave
 # 
-# É seu primeiro dia de trabalho na DataSciencester e o vice-presidente de Rede (networking) está cheio de perguntas sobre seus usuários. Até agora, ele não teve ninguém para perguntar, então ele está muito empolgado em ter você aqui. Particularmente, ele quer que você identifique quem são os “conectores-chave” entre os cientistas de dados. Para isso, ele lhe dá uma parte de toda a rede da DataSciencester. Na vida real, você geralmente não recebe os dados de que precisa. O Capítulo 9 é voltado para a obtenção de dados. Com o que se parece essa parte dos dados? Ela consiste em uma lista de usuários, cada um representado por um dict que contém um id (um número) para cada usuário ou usuária e um name (que por uma das grandes coincidências cósmicas que rima com o id do usuário):
+# É seu primeiro dia de trabalho na DataSciencester e o vice-presidente de Rede (networking) está cheio de perguntas sobre seus usuários. 
+# Até agora, ele não teve ninguém para perguntar, então ele está muito empolgado em ter você aqui. 
+# Particularmente, ele quer que você identifique quem são os “conectores-chave” entre os cientistas de dados. 
+# Para isso, ele lhe dá uma parte de toda a rede da DataSciencester. Na vida real, você geralmente não recebe os dados de que precisa. 
+# O Capítulo 9 é voltado para a obtenção de dados. Com o que se parece essa parte dos dados? 
+#Ela consiste em uma lista de usuários, cada um representado por um dict que contém
+# um id (um número) para cada usuário ou usuária e um name (que por uma das grandes coincidências cósmicas que rima com o id do usuário):
 
 users = [
 { "id": 0, "name": "Hero" },
@@ -26,8 +32,10 @@ friendships = [(0, 1), (0, 2), (1, 2), (1, 3), (2, 3), (3, 4),
                (4, 5), (5, 6), (5, 7), (6, 8), (7, 8), (8, 9)]
 
 
-# Por exemplo, a tupla (0,1) indica que o cientista de dados com a id 0 (Hero) e o cientista de dados com a id 1 (Dunn) são amigos. Já que representamos nossos usuários como dicts, é fácil de aumentá-los com dados extras.
-# Por exemplo, talvez nós queiramos adicionar uma lista de amigos para cada usuário. Primeiro nós configuramos a propriedade friends de cada usuário em uma lista vazia:
+# Por exemplo, a tupla (0,1) indica que o cientista de dados com a id 0 (Hero) e o cientista de dados com a id 1 (Dunn) são amigos. 
+# Já que representamos nossos usuários como dicts, é fácil de aumentá-los com dados extras.
+# Por exemplo, talvez nós queiramos adicionar uma lista de amigos para cada usuário. Primeiro nós configuramos
+# a propriedade friends de cada usuário em uma lista vazia:
 
 
 for user in users:
